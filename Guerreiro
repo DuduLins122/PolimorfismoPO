@@ -1,0 +1,17 @@
+public class Guerreiro extends Personagem {
+    private int forca;
+
+    public Guerreiro(String nome, int nivel, int forca) {
+        super(nome, nivel, "Guerreiro");
+        this.forca = forca;
+    }
+
+    @Override
+    public void especial() {
+        System.out.println(getNome() + " usa o golpe especial: Fúria do Guerreiro!");
+    }
+
+    public void defender() {
+        System.out.println(getNome() + " levanta o escudo e se defende.");
+    }
+}
