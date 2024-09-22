@@ -1,0 +1,17 @@
+public class Arqueiro extends Personagem {
+    private int precisao;
+
+    public Arqueiro(String nome, int nivel, int precisao) {
+        super(nome, nivel, "Arqueiro");
+        this.precisao = precisao;
+    }
+
+    @Override
+    public void especial() {
+        System.out.println(getNome() + " dispara uma flecha explosiva!");
+    }
+
+    public void atirarFlecha() {
+        System.out.println(getNome() + " atira uma flecha com precisão.");
+    }
+}
