@@ -1,0 +1,29 @@
+public class Personagem {
+    private String nome;
+    private int nivel;
+    private String classe;
+
+    public Personagem() {
+        this.nome = "Desconhecido";
+        this.nivel = 1;
+        this.classe = "Nenhuma";
+    }
+
+    public Personagem(String nome, int nivel, String classe) {
+        this.nome = nome;
+        this.nivel = nivel;
+        this.classe = classe;
+    }
+
+    public void atacar() {
+        System.out.println(this.nome + " ataca com um golpe simples.");
+    }
+
+    public void especial() {
+        System.out.println(this.nome + " usa sua habilidade especial.");
+    }
+
+    public String getNome() {
+        return nome;
+    }
+}
