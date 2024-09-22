@@ -1,0 +1,17 @@
+public class Mago extends Personagem {
+    private int mana;
+
+    public Mago(String nome, int nivel, int mana) {
+        super(nome, nivel, "Mago");
+        this.mana = mana;
+    }
+
+    @Override
+    public void especial() {
+        System.out.println(getNome() + " conjura a magia especial: Chuva de Meteoro!");
+    }
+
+    public void lançarFeitico() {
+        System.out.println(getNome() + " lança uma bola de fogo.");
+    }
+}
