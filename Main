@@ -1,0 +1,30 @@
+public class Main {
+    public static void main(String[] args) {
+        Personagem personagem1 = new Guerreiro("Thor", 10, 100);
+        Personagem personagem2 = new Mago("Merlin", 12, 200);
+        Personagem personagem3 = new Arqueiro("Legolas", 8, 95);
+
+        if (personagem1 instanceof Guerreiro) {
+            Guerreiro guerreiro = (Guerreiro) personagem1;
+            guerreiro.defender();
+        }
+
+        if (personagem2 instanceof Mago) {
+            Mago mago = (Mago) personagem2;
+            mago.lançarFeitico();
+        }
+
+        if (personagem3 instanceof Arqueiro) {
+            Arqueiro arqueiro = (Arqueiro) personagem3;
+            arqueiro.atirarFlecha();
+        }
+
+        usarEspecial(personagem1);
+        usarEspecial(personagem2);
+        usarEspecial(personagem3);
+    }
+
+    public static void usarEspecial(Personagem personagem) {
+        personagem.especial();
+    }
+}
